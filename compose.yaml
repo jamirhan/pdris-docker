@@ -1,0 +1,13 @@
+services:
+  alice:
+    build: ./Alice/
+    ports: 
+      - 9000:8080
+  eve:
+    build: ./Eve/
+    ports: 
+      - 9001:8080
+  bob:
+    build: ./Bob/
+    ports:
+      - 9002:8080
